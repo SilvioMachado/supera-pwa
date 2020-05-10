@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 // Components
-import LoadingDialog from 'components/loading-dialog';
+import LoadingDialog, { ErrorDialog } from 'components/dialogs';
 
 // API
 import { makeLogin } from 'api/login';
@@ -17,13 +17,17 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
 
+  const [openErrorDialog, setOpenErrorDialog] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+
   const onLoginSuccess = (data) => { 
     console.log(data)
     setLoading(false);
   };
   const onLoginError = (e) => {
-    console.log(e)
+    setErrorMessage(e);
     setLoading(false);
+    setOpenErrorDialog(true);
   };
 
   const login = () => {
@@ -34,18 +38,19 @@ const Login = () => {
   return (
     <div className='root-div'>
 
-      <LoadingDialog open={loading} customMessage={'Entrando...'}/>
+      <LoadingDialog open={loading} customMessage='Entrando...'/>
+      <ErrorDialog open={openErrorDialog} setOpen={setOpenErrorDialog} message={errorMessage} title='Erro'/>
 
        <div className='wrapper'>
       
-          <img src={superaLogo} /> 
+          <img alt='' src={superaLogo} /> 
 
           <div className='form-group'>
 
               {/* Username */}
               <div className='login-form'>
                 <div className='image-div'>
-                  <img className='form-image' src={ic_email}/>
+                  <img alt='' className='form-image' src={ic_email}/>
                 </div>
                 <input type='text' onChange={e => setEmail(e.target.value)}/>
               </div>
@@ -54,7 +59,7 @@ const Login = () => {
               <div className='login-form'>
 
                 <div className='image-div'>
-                  <img className='form-image' src={ic_password} style={{width: '15px'}}/>
+                  <img alt='' className='form-image' src={ic_password} style={{width: '15px'}}/>
                 </div>
 
                 <input type='password' onChange={e => setPassword(e.target.value)}/>

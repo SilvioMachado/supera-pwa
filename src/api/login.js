@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const makeLogin = (username, password, onSuccess, onError) => {
   const params = new FormData();
   params.append('email', username);
