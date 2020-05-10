@@ -13,23 +13,20 @@ body > #root > div {
   flex-direction: column;
 }
 
-.logo-wrapper {
-  margin: 30px 0 0 0;
-  display: block;
-}
-
 img {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 30px;
-  width: 200px;
+  margin-top: 40px;
+  width: 225px;
   height: 100px;
 }
 
 .image-div {
   background-color: white;
-  height: 29px;
-  width: 29px;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-image {
@@ -43,8 +40,7 @@ img {
 }
 
 .login-form {
-  max-width: 200px;
-  height: 30px;
+  width: 300px;
   margin-bottom: 15px;
   margin: 10px auto;
 
@@ -55,12 +51,11 @@ img {
     border-bottom-right-radius: 0.2em;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    height: 25px;
-    width: 170px;
+    height: 35px;
+    width: 100%;
     background-color: rgba(999, 999, 999, 0.2);
     color: white;
-    font-size: 12px;
-    margin-bottom: 10px;
+    font-size: 15px;
   }
 
   display: flex;
@@ -73,9 +68,10 @@ img {
 }
 
 button {
-  width: 100px;
-  height: 35px;
+  width: 125px;
+  height: 45px;
   margin-bottom: 10px;
+  font-size: large;
   margin-left: auto;
   margin-right: auto;
 }
@@ -83,7 +79,7 @@ button {
 .white-round-button {
   border: 1px solid rgba(999, 999, 999, 0);
   background-color: white;
-  border-radius: 0.5em;
+  border-radius: 0.3em;
   color: $primaryColor;
 }
 
@@ -91,7 +87,7 @@ button {
   border: 1px solid rgba(999, 999, 999, 1);
   background-color: $primaryColor;
   color: white;
-  border-radius: 0.5em;
+  border-radius: 0.3em;
 }
 
 h6 {
