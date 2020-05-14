@@ -1,0 +1,73 @@
+@import "variables.scss";
+
+h2 {
+  color: $primaryColor;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+}
+
+.text-field {
+  margin-bottom: 15px;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#state.MuiInput-input {
+  text-transform: uppercase;
+}
+
+.uppercase-input {
+  text-transform: uppercase;
+}
+
+input {
+  width: 600px;
+}
+
+.orange-round-button {
+  border: 1px solid rgba(999, 999, 999, 1);
+  background-color: $primaryColor;
+  color: white;
+  border-radius: 0.3em;
+  margin: 10px auto;
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) {
+  .form-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  .text-field {
+    margin-bottom: 15px;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .orange-round-button {
+    border: 1px solid rgba(999, 999, 999, 1);
+    background-color: $primaryColor;
+    color: white;
+    border-radius: 0.3em;
+    margin: 10px auto;
+  }
+}

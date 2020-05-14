@@ -65,7 +65,7 @@ ErrorDialog.defaultProps = {
   setOpen: () => {},
   title: '',
   message: '',
-  buttonMessage: 'OK',
+  buttonMessage: 'Ok',
   onClick: () => {},
   dismiss: false
 }

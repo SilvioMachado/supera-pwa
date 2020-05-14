@@ -2,11 +2,30 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import Login from './login';
+import { HashRouter as Router, Route } from 'react-router-dom';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+// Screens
+import Login from './pages/login';
+import Register from 'pages/register';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#F56C27'
+    }
+  }
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <Login />
+    <MuiThemeProvider theme={theme}>
+      <Router>
+        <Route path='/' exact component={Login} />
+        <Route path='/login' component={Login} />
+        <Route path='/register' component={Register} />
+      </Router>
+    </MuiThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

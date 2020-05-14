@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // Components
 import LoadingDialog, { ErrorDialog } from 'components/dialogs';
@@ -69,7 +70,7 @@ const Login = () => {
           </div>
 
           <button className='white-round-button' onClick={login}> Entrar </button>
-          <button className='orange-round-button'> Registrar </button>
+          <button className='orange-round-button'> <Link to='/register'>Registrar</Link> </button>
         </div> 
       
     </div>
