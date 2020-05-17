@@ -20,6 +20,8 @@
   ],
   "start_url": ".",
   "display": "standalone",
+  "background_color": "#F56C27",
+  "theme_color": "#F56C27",
   "description": "Aplicativo Supera Online agora ainda mais leve e na Web.",
   "orientation": "portrait",
   "lang": "pt-BR"
