@@ -38,11 +38,11 @@
   margin: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 899px) {
   .button-wrapper {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: auto;
     margin-top: 25px;
   }
   
@@ -98,7 +98,7 @@
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) {
+@media (min-width: 900px) {
   #welcome-text {
     font-size: larger;
   }
