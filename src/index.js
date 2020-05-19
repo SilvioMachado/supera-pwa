@@ -21,7 +21,7 @@ const theme = createMuiTheme({
 ReactDOM.render(
   <React.StrictMode>
     <MuiThemeProvider theme={theme}>
-      <Router>
+      <Router basename='/testesecreto'>
         <Route path='/' exact component={Login} />
         <Route path='/login' component={Login} />
         <Route path='/register' component={Register} />
