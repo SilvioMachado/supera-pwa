@@ -4,6 +4,7 @@ import MenuItem from '../components/menu-item';
 
 import playIcon from 'images/icon-play.svg';
 
+
 export default {
   title: 'Menu Item',
   component: MenuItem

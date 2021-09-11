@@ -21,7 +21,7 @@ const mediumButton = {
 const MenuItem = ({text, imgSource, ...props}) => {
   return (
     <div style={mediumButton}>
-      <img src={imgSource} style={{width: '70px', height: '70px'}} />
+      <img src={imgSource} style={{width: '50px', height: '50px', marginBottom: '10px'}} />
       {text}
     </div>
   )
