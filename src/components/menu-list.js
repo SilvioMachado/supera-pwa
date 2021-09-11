@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuItem from './menu-item';
+import MenuItem from './MenuItem';
 
 const MenuList = ({menuItemList, ...props}) => {
   return (

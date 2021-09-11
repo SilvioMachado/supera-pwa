@@ -25,8 +25,8 @@ const menuItemList = [
 const HomePage = (props) => {
   return (
     <div>
-      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', background: '#F56C27', height: '40px', width: '100%', marginBottom: '15px'}}>
-        <img src={superaIcon} height={34} width={78}/>
+      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', background: '#F56C27', height: '50px', width: '100%', marginBottom: '15px'}}>
+        <img src={superaIcon} style={{height: '40px', width: '90px', margin: 'auto'}} />
       </div>
       <HomeHeader userName='Silvio Machado' ipc={23} />
       <br />

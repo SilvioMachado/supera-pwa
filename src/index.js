@@ -8,7 +8,9 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 // Screens
 import Login from './pages/login';
 import Register from 'pages/register';
-import Home from 'pages/home';
+// import Home from 'pages/home';
+
+import HomePage from 'pages/HomePage';
 
 const theme = createMuiTheme({
   palette: {
@@ -21,11 +23,11 @@ const theme = createMuiTheme({
 ReactDOM.render(
   <React.StrictMode>
     <MuiThemeProvider theme={theme}>
-      <Router basename='/testesecreto'>
+      <Router>
         <Route path='/' exact component={Login} />
         <Route path='/login' component={Login} />
         <Route path='/register' component={Register} />
-        <Route path='/home' component={Home} />
+        <Route path='/home' component={HomePage} />
       </Router>
     </MuiThemeProvider>
   </React.StrictMode>,

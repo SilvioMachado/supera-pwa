@@ -44,7 +44,7 @@ const Login = () => {
 
        <div className='wrapper'>
       
-          <img alt='' src={superaLogo} /> 
+          <img id="loginLogo" alt='' src={superaLogo} /> 
 
           <div className='form-group'>
 

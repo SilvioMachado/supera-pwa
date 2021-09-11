@@ -9,7 +9,8 @@ const buttonStyle = {
   justifyContent: 'center',
   color: '#F56C27',
   fontWeight: 'bold',
-  margin: '0 10px 20px 10px'
+  margin: '0 10px 20px 10px',
+  cursor: 'pointer'
 };
 
 const mediumButton = {
